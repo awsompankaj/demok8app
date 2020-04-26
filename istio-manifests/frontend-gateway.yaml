@@ -25,7 +25,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "*"
+    - "demo.k8s.mevijay.com"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -33,7 +33,7 @@ metadata:
   name: frontend-ingress
 spec:
   hosts:
-  - "*"
+  - "demo.k8s.mevijay.com"
   gateways:
   - frontend-gateway
   http:
