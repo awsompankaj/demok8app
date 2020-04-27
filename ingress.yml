@@ -6,7 +6,7 @@ spec:
   tls:
   - hosts: 
     - ENV.k8s.mevijay.com 
-    secretName: tls-secret
+    secretName: wildcard
   rules:
   - host: ENV.k8s.mevijay.com
     http:
