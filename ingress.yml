@@ -3,6 +3,10 @@ kind: Ingress
 metadata:
   name:  frontend
 spec:
+  tls:
+  - hosts: 
+    - ENV.k8s.mevijay.com 
+    secretName: tls-secret
   rules:
   - host: ENV.k8s.mevijay.com
     http:
